@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Livraria Online</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span class="menu-line"></span>
+      </label>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-item">Categorias</a></li>
+          <li><a href="#" class="nav-item">Programação</a></li>
+          <li><a href="#" class="nav-item">Design</a></li>
+          <li><a href="#" class="nav-item">Marketing</a></li>
+          <li><a href="#" class="nav-item">Negócios</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo Livraria Online">
+      </div>
+      <div class="user-actions">
+        <a href="#"><img src="img/favorites.svg" alt="Favoritos"></a>
+        <a href="#"><img src="img/cart.svg" alt="Carrinho"></a>
+        <a href="#"><img src="img/user.svg" alt="Usuário"></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <h1 class="banner-title">Descubra sua próxima leitura!</h1>
+      <p class="banner-description">Encontre livros incríveis para o seu desenvolvimento pessoal e profissional.</p>
+      <input type="search" class="banner-search" placeholder="Qual será sua próxima leitura?">
+    </div>
+  </section>
+
+  <section class="carousel">
+    <h2 class="carousel-title">Novos Lançamentos</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/book1.jpg" alt="Livro 1"></div>
+        <div class="swiper-slide"><img src="img/book2.jpg" alt="Livro 2"></div>
+        <div class="swiper-slide"><img src="img/book3.jpg" alt="Livro 3"></div>
+        <div class="swiper-slide"><img src="img/book4.jpg" alt="Livro 4"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="featured-book">
+    <div class="container">
+      <h2 class="featured-book-title">Talvez você também se interesse por...</h2>
+      <div class="book-card">
+        <div class="book-info">
+          <h3 class="book-title">Angular 11 e Firebase</h3>
+          <p class="book-description">Construindo uma aplicação integrada com a plataforma do Google.</p>
+        </div>
+        <img src="img/angular-book.jpg" class="book-image" alt="Livro sobre Angular">
+      </div>
+      <div class="book-actions">
+        <button class="btn favorite-btn">Favoritar</button>
+        <button class="btn cart-btn">Adicionar ao Carrinho</button>
+        <a href="#" class="btn more-info-btn">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-topics">
+    <h2 class="recent-topics-title">Tópicos Recentemente Visitados</h2>
+    <ul class="topics-list">
+      <li><a href="#" class="topic-link">Python</a></li>
+      <li><a href="#" class="topic-link">JavaScript</a></li>
+      <li><a href="#" class="topic-link">Desenvolvimento Web</a></li>
+      <li><a href="#" class="topic-link">Marketing Digital</a></li>
+      <li><a href="#" class="topic-link">UX/UI Design</a></li>
+    </ul>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2 class="newsletter-title">Fique por dentro das novidades!</h2>
+      <p class="newsletter-description">Receba atualizações sobre novos livros, promoções e lançamentos.</p>
+      <input type="email" class="newsletter-email" placeholder="Cadastre seu e-mail">
+      <button class="btn subscribe-btn">Inscrever-se</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Livraria Online. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper-container", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
